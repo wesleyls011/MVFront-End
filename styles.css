@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.car-icon {
+    width: 64px;
+    height: 64px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+}
+
+.menu-buttons {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.menu-button {
+    background: white;
+    border: none;
+    padding: 2rem;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2d3748;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0052D4, #4364F7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.menu-button:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.menu-button:hover::before {
+    opacity: 1;
+}
+
+.menu-button .icon {
+    font-size: 2rem;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover .icon {
+    transform: scale(1.2);
+}
+
+.menu-button span:not(.icon) {
+    z-index: 2;
+    position: relative;
+}
+
+.menu-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.menu-button.active {
+    animation: pulse 1.5s infinite;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        padding: 2rem 1rem;
+    }
+    
+    .right-panel {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-buttons {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .menu-button {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+}

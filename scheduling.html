@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Gerenciamento de Manutenção Veicular</title>
+    <link rel="stylesheet" href="scheduling.css">
+</head>
+<body>
+    <div class="scheduling-container">
+        <header class="top-bar">
+            <div class="logo-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYgMjFWNWEyIDIgMCAwIDAtMi0yaC00YTIgMiAwIDAgMC0yIDJ2MTYiLz48cGF0aCBkPSJNMjAgMjFWOGEyIDIgMCAwIDAtMi0yaC0yIi8+PHBhdGggZD0iTTQgMjFWOGEyIDIgMCAwIDEgMi0yaDIiLz48bGluZSB4MT0iNCIgeTE9IjIxIiB4Mj0iMjAiIHkyPSIyMSIvPjwvc3ZnPg==" alt="Car Icon" class="small-icon">
+                <h1>Agendamento</h1>
+            </div>
+            <button class="back-button" onclick="window.history.back()">Voltar</button>
+        </header>
+
+        <main class="scheduling-grid">
+            <div class="scheduling-card">
+                <h3>Novo Agendamento</h3>
+                <button class="add-button">+</button>
+            </div>
+            <div class="scheduling-card">
+                <div class="appointment-info">
+                    <span class="date">15 Mar</span>
+                    <h4>Troca de Óleo</h4>
+                    <p>Cliente: João Silva</p>
+                    <p>Veículo: Fiat Uno</p>
+                </div>
+                <div class="status pending">Pendente</div>
+            </div>
+            <div class="scheduling-card">
+                <div class="appointment-info">
+                    <span class="date">16 Mar</span>
+                    <h4>Revisão Geral</h4>
+                    <p>Cliente: Maria Santos</p>
+                    <p>Veículo: Honda Fit</p>
+                </div>
+                <div class="status confirmed">Confirmado</div>
+            </div>
+            <div class="scheduling-card">
+                <div class="appointment-info">
+                    <span class="date">17 Mar</span>
+                    <h4>Alinhamento</h4>
+                    <p>Cliente: Pedro Oliveira</p>
+                    <p>Veículo: VW Gol</p>
+                </div>
+                <div class="status completed">Concluído</div>
+            </div>
+        </main>
+    </div>
+    <script src="../scripts/scheduling.js"></script>
+</body>
+</html>
