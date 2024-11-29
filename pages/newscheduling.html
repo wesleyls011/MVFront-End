@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Agendamento - Gerenciamento de Manutenção Veicular</title>
+    <link rel="stylesheet" href="../styles/newscheduling.css">
+</head>
+<body>
+    <div class="scheduling-container">
+        <header class="top-bar">
+            <div class="logo-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYgMjFWNWEyIDIgMCAwIDAtMi0yaC00YTIgMiAwIDAgMC0yIDJ2MTYiLz48cGF0aCBkPSJNMjAgMjFWOGEyIDIgMCAwIDAtMi0yaC0yIi8+PHBhdGggZD0iTTQgMjFWOGEyIDIgMCAwIDEgMi0yaDIiLz48bGluZSB4MT0iNCIgeTE9IjIxIiB4Mj0iMjAiIHkyPSIyMSIvPjwvc3ZnPg==" alt="Car Icon" class="small-icon">
+                <h1>Novo Agendamento</h1>
+            </div>
+            <button class="back-button" onclick="window.location.href='scheduling.html'">Voltar</button>
+        </header>
+
+        <main class="scheduling-form-container">
+            <form id="newSchedulingForm" class="scheduling-form">
+                <div class="form-section">
+                    <h2>Informações do Cliente</h2>
+                    <div class="form-group">
+                        <label for="client">Cliente:</label>
+                        <select id="client" required>
+                            <option value="">Selecione um cliente</option>
+                            <option value="1">João Silva</option>
+                            <option value="2">Maria Santos</option>
+                            <option value="3">Pedro Oliveira</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle">Veículo:</label>
+                        <select id="vehicle" required>
+                            <option value="">Selecione um veículo</option>
+                            <option value="1">Fiat Uno - ABC-1234</option>
+                            <option value="2">Honda Fit - DEF-5678</option>
+                            <option value="3">VW Gol - GHI-9012</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Serviços</h2>
+                    <div class="form-group">
+                        <label for="service">Tipo de Serviço:</label>
+                        <select id="service" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="1">Troca de Óleo - R$ 150,00</option>
+                            <option value="2">Revisão Geral - R$ 350,00</option>
+                            <option value="3">Alinhamento - R$ 120,00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Data e Hora</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Data:</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Hora:</label>
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Observações</h2>
+                    <div class="form-group">
+                        <textarea id="notes" rows="4" placeholder="Adicione observações importantes sobre o serviço..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="secondary-button" onclick="window.location.href='scheduling.html'">Cancelar</button>
+                    <button type="submit" class="primary-button">Agendar Serviço</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="../scripts/newscheduling.js"></script>
+</body>
+</html>

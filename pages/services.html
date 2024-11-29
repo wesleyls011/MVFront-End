@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Gerenciamento de Manutenção Veicular</title>
+    <link rel="stylesheet" href="../styles/services.css">
+</head>
+<body>
+    <div class="services-container">
+        <header class="top-bar">
+            <div class="logo-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYgMjFWNWEyIDIgMCAwIDAtMi0yaC00YTIgMiAwIDAgMC0yIDJ2MTYiLz48cGF0aCBkPSJNMjAgMjFWOGEyIDIgMCAwIDAtMi0yaC0yIi8+PHBhdGggZD0iTTQgMjFWOGEyIDIgMCAwIDEgMi0yaDIiLz48bGluZSB4MT0iNCIgeTE9IjIxIiB4Mj0iMjAiIHkyPSIyMSIvPjwvc3ZnPg==" alt="Car Icon" class="small-icon">
+                <h1>Serviços</h1>
+            </div>
+            <button class="back-button" onclick="window.location.href='../pages/index.html'">Voltar</button>
+        </header>
+
+        <main class="services-grid">
+            <div class="service-card new-service">
+                <h3>Novo Serviço</h3>
+                <button class="add-button" onclick="openNewServiceForm()">+</button>
+            </div>
+            <div class="service-card">
+                <div class="service-info">
+                    <div class="service-icon">🔧</div>
+                    <h4>Troca de Óleo</h4>
+                    <p>⏱️ Duração: 1 hora</p>
+                    <p>💰 Valor: R$ 150,00</p>
+                    <div class="service-tags">
+                        <span class="tag">Manutenção Preventiva</span>
+                        <span class="tag">Motor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-info">
+                    <div class="service-icon">⚙️</div>
+                    <h4>Revisão Geral</h4>
+                    <p>⏱️ Duração: 3 horas</p>
+                    <p>💰 Valor: R$ 350,00</p>
+                    <div class="service-tags">
+                        <span class="tag">Revisão</span>
+                        <span class="tag">Diagnóstico</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-info">
+                    <div class="service-icon">🔩</div>
+                    <h4>Alinhamento</h4>
+                    <p>⏱️ Duração: 2 horas</p>
+                    <p>💰 Valor: R$ 120,00</p>
+                    <div class="service-tags">
+                        <span class="tag">Suspensão</span>
+                        <span class="tag">Rodas</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="newServiceModal" class="modal">
+            <div class="modal-content">
+                <h2>Novo Serviço</h2>
+                <form id="newServiceForm">
+                    <div class="form-group">
+                        <label for="name">Nome do Serviço:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duração (horas):</label>
+                        <input type="number" id="duration" min="0.5" step="0.5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Valor (R$):</label>
+                        <input type="number" id="price" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags (separadas por vírgula):</label>
+                        <input type="text" id="tags" placeholder="Ex: Revisão, Motor">
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" onclick="closeNewServiceForm()">Cancelar</button>
+                        <button type="submit">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/services.js"></script>
+</body>
+</html>
