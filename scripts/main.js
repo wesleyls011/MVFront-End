@@ -8,13 +8,13 @@ function handleNavigation(section) {
 
     console.log(`Navegando para a seção: ${section}`);
 
-    // Lógica de navegação
-    switch (section) {
+    
+    switch (section) { // se nao tiver window.location ele tambem nao vai funcionar
         case 'scheduling':
-           dow.location win.href = '../pages/scheduling.html';
+            window.location.href = '../pages/scheduling.html';
             break;
         case 'vehicles':
-            window.location.href = '..pages/vehicles.html';
+            window.location.href = '../pages/vehicles.html';
             break;
         case 'clients':
             window.location.href = '../pages/clients.html';

@@ -9,32 +9,32 @@
 <body>
     <div class="container">
         <div class="left-panel">
-            <div class="logo">
+            <div class="logo"> <!-- talvez alterar a logo, a ver ainda-->
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYgMjFWNWEyIDIgMCAwIDAtMi0yaC00YTIgMiAwIDAgMC0yIDJ2MTYiLz48cGF0aCBkPSJNMjAgMjFWOGEyIDIgMCAwIDAtMi0yaC0yIi8+PHBhdGggZD0iTTQgMjFWOGEyIDIgMCAwIDEgMi0yaDIiLz48bGluZSB4MT0iNCIgeTE9IjIxIiB4Mj0iMjAiIHkyPSIyMSIvPjwvc3ZnPg==" alt="Car Icon" class="car-icon">
             </div>
             <h1>Gerenciamento de Manutenção Veicular</h1>
             <p class="subtitle">Seu veículo sempre pronto para a estrada!</p>
         </div>
         <div class="right-panel">
-            <div class="menu-buttons">
-                <button class="menu-button" onclick="window.location.href='scheduling.html'">
-                    <span class="icon">📅</span>
+            <div class="menu-buttons"> 
+                <button class="menu-button" data-section="scheduling" onclick="handleNavigation('scheduling')">
+                    <span class="icon">📅</span> 
                     Agendamento
-                </button>
-                <button class="menu-button" onclick="window.location.href='vehicles.html'">
+                </button>  <!-- ate que enfim funcionou!!! -->
+                <button class="menu-button" data-section="vehicles" onclick="handleNavigation('vehicles')">
                     <span class="icon">🚗</span>
                     Veículos
                 </button>
-                <button class="menu-button" onclick="window.location.href= 'clients.html'">
+                <button class="menu-button" data-section="clients" onclick="handleNavigation('clients')">
                     <span class="icon">👤</span>
                     Cliente
                 </button>
-                <button class="menu-button" onclick="window.location.href= 'services.html'">
+                <button class="menu-button" data-section="services" onclick="handleNavigation('services')">
                     <span class="icon">🔧</span>
                     Serviços
                 </button>
             </div>
-        </div>
+        </div> <!-- sem o handlenavigation ele nao funciona a logica do js-->
     </div>
     <script src="../scripts/main.js"></script>
 </body>

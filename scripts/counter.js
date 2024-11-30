@@ -6,4 +6,4 @@ export function setupCounter(element) {
     }
     element.addEventListener('click', () => setCounter(counter + 1))
     setCounter(0)
-  }
+  }  // NAO SEI OQ ESSA CLASSE FAZ AINDA

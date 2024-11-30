@@ -17,68 +17,31 @@
         </header>
 
         <main class="scheduling-form-container">
-            <form id="newSchedulingForm" class="scheduling-form">
-                <div class="form-section">
-                    <h2>Informações do Cliente</h2>
-                    <div class="form-group">
-                        <label for="client">Cliente:</label>
-                        <select id="client" required>
-                            <option value="">Selecione um cliente</option>
-                            <option value="1">João Silva</option>
-                            <option value="2">Maria Santos</option>
-                            <option value="3">Pedro Oliveira</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="vehicle">Veículo:</label>
-                        <select id="vehicle" required>
-                            <option value="">Selecione um veículo</option>
-                            <option value="1">Fiat Uno - ABC-1234</option>
-                            <option value="2">Honda Fit - DEF-5678</option>
-                            <option value="3">VW Gol - GHI-9012</option>
-                        </select>
-                    </div>
-                </div>
+           <form action="#" method="POST" id="schedulingForm">
+            <div class="form-group">
+                <label for="clientCPF">CPF do Cliente:</label>
+                <input type="text" id="clientCPF" name="clientCPF" placeholder="Exemplo: 12345678910" required>
+            </div>
 
-                <div class="form-section">
-                    <h2>Serviços</h2>
-                    <div class="form-group">
-                        <label for="service">Tipo de Serviço:</label>
-                        <select id="service" required>
-                            <option value="">Selecione um serviço</option>
-                            <option value="1">Troca de Óleo - R$ 150,00</option>
-                            <option value="2">Revisão Geral - R$ 350,00</option>
-                            <option value="3">Alinhamento - R$ 120,00</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="veiculoPlaca">Placa do Veículo:</label>
+                <input type="text" id="veiculoPlaca" name="veiculoPlaca" placeholder="Exemplo: ABC-1234" pattern="[A-Za-z]{3}-\d{4}" required>
+            </div>
 
-                <div class="form-section">
-                    <h2>Data e Hora</h2>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="date">Data:</label>
-                            <input type="date" id="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Hora:</label>
-                            <input type="time" id="time" required>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="dataAgendamento">Data do Agendamento:</label>
+                <input type="date" id="dataAgendamento" name="dataAgendamento">
+            </div>
 
-                <div class="form-section">
-                    <h2>Observações</h2>
-                    <div class="form-group">
-                        <textarea id="notes" rows="4" placeholder="Adicione observações importantes sobre o serviço..."></textarea>
-                    </div>
-                </div>
-
-                <div class="form-buttons">
-                    <button type="button" class="secondary-button" onclick="window.location.href='scheduling.html'">Cancelar</button>
-                    <button type="submit" class="primary-button">Agendar Serviço</button>
-                </div>
-            </form>
+            <div class="form-group">
+                <label for="idServico">ID do Serviço:</label>
+                <input type="number" id="idServico" name="idServico">
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="secondary-button" onclick="window.location.href='scheduling.html'">Cancelar</button>
+                <button type="submit" class="primary-button">Cadastrar Cliente</button>
+            </div>
+           </form>
         </main>
     </div>
     <script src="../scripts/newscheduling.js"></script>

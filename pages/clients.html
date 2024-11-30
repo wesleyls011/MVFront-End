@@ -17,9 +17,9 @@
         </header>
 
         <main class="clients-grid">
-            <div class="client-card new-client">
+            <div class="client-card novo-cliente">
                 <h3>Novo Cliente</h3>
-                <button class="add-button" onclick="openNewClientForm()">+</button>
+                <button class="add-button" onclick="window.location.href='newclient.html'">+</button>
             </div>
             <div class="client-card">
                 <div class="client-info">
@@ -27,9 +27,9 @@
                     <h4>João Silva</h4>
                     <p>📱 (11) 98765-4321</p>
                     <p>📧 joao.silva@email.com</p>
-                    <div class="client-vehicles">
-                        <span class="vehicle-tag">Fiat Uno</span>
-                        <span class="vehicle-tag">Honda CB 300</span>
+                    <div class="clientes-veiculos">
+                        <span class="veiculo-tag">Fiat Uno</span>
+                        <span class="veiculo-tag">Honda CB 300</span>
                     </div>
                 </div>
             </div>
@@ -39,8 +39,8 @@
                     <h4>Maria Santos</h4>
                     <p>📱 (11) 91234-5678</p>
                     <p>📧 maria.santos@email.com</p>
-                    <div class="client-vehicles">
-                        <span class="vehicle-tag">Honda Fit</span>
+                    <div class="clientes-veiculos">
+                        <span class="veiculo-tag">Honda Fit</span>
                     </div>
                 </div>
             </div>
@@ -50,37 +50,13 @@
                     <h4>Pedro Oliveira</h4>
                     <p>📱 (11) 99876-5432</p>
                     <p>📧 pedro.oliveira@email.com</p>
-                    <div class="client-vehicles">
-                        <span class="vehicle-tag">VW Gol</span>
-                        <span class="vehicle-tag">Yamaha Factor</span>
+                    <div class="clientes-veiculos">
+                        <span class="veiculo-tag">VW Gol</span>
+                        <span class="veiculo-tag">Yamaha Factor</span>
                     </div>
                 </div>
             </div>
         </main>
-
-        <div id="newClientModal" class="modal">
-            <div class="modal-content">
-                <h2>Novo Cliente</h2>
-                <form id="newClientForm">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefone:</label>
-                        <input type="tel" id="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-buttons">
-                        <button type="button" onclick="closeNewClientForm()">Cancelar</button>
-                        <button type="submit">Salvar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
     <script src="../scripts/clients.js"></script>
 </body>

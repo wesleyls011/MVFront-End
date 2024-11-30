@@ -45,11 +45,9 @@ document.getElementById('newClientForm').addEventListener('submit', (e) => {
     console.log('Novo cliente:', formData);
     closeNewClientForm();
     
-    // Limpar formulário
     e.target.reset();
 });
 
-// Fechar modal ao clicar fora
 document.getElementById('newClientModal').addEventListener('click', (e) => {
     if (e.target.id === 'newClientModal') {
         closeNewClientForm();

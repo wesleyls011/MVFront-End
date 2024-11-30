@@ -11,9 +11,9 @@ function initializeServiceCards() {
         });
     });
 }
-
+   // tem que ver se vai usar esses js pra abrir novo cadastro ou usar o html msm
 function handleServiceCardClick(card) {
-    // Adicionar animação de feedback ao clicar
+
     card.style.transform = 'scale(0.98)';
     setTimeout(() => {
         card.style.transform = 'translateY(-4px)';
@@ -23,7 +23,7 @@ function handleServiceCardClick(card) {
     console.log(`Serviço selecionado: ${serviceName}`);
 }
 
-function openNewServiceForm() {
+function openNewServiceForm() {  // esse aqui ta funcionando mas nao era pra estar!!
     const modal = document.getElementById('newServiceModal');
     modal.style.display = 'flex';
 }
@@ -45,12 +45,10 @@ document.getElementById('newServiceForm').addEventListener('submit', (e) => {
 
     console.log('Novo serviço:', formData);
     closeNewServiceForm();
-    
-    // Limpar formulário
+
     e.target.reset();
 });
 
-// Fechar modal ao clicar fora
 document.getElementById('newServiceModal').addEventListener('click', (e) => {
     if (e.target.id === 'newServiceModal') {
         closeNewServiceForm();

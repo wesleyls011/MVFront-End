@@ -13,7 +13,7 @@ function initializeVehicleCards() {
 }
 
 function handleVehicleCardClick(card) {
-    // Adicionar animação de feedback ao clicar
+
     card.style.transform = 'scale(0.98)';
     setTimeout(() => {
         card.style.transform = 'translateY(-4px)';
@@ -46,11 +46,9 @@ document.getElementById('newVehicleForm').addEventListener('submit', (e) => {
     console.log('Novo veículo:', formData);
     closeNewVehicleForm();
     
-    // Limpar formulário
     e.target.reset();
 });
 
-// Fechar modal ao clicar fora
 document.getElementById('newVehicleModal').addEventListener('click', (e) => {
     if (e.target.id === 'newVehicleModal') {
         closeNewVehicleForm();

@@ -19,49 +19,28 @@
         <main class="scheduling-form-container">
             <form action="#" method="POST" id="vehicleForm">
                 <div class="form-group">
-                    <label for="vehicleName">Nome do Veículo:</label>
-                    <input type="text" id="vehicleName" name="vehicleName" placeholder="Exemplo: Toyota Corolla" required>
+                    <label for="marcaVeiculo">Marca do Veículo:</label>
+                    <input type="text" id="marcaVeiculo" name="marcaVeiculo" placeholder="Exemplo: Toyota Corolla" required>
                 </div>
     
                 <div class="form-group">
-                    <label for="vehicleModel">Modelo:</label>
-                    <input type="text" id="vehicleModel" name="vehicleModel" placeholder="Exemplo: 2020" required>
+                    <label for="modeloVeiculo">Modelo:</label>
+                    <input type="text" id="modeloVeiculo" name="modeloVeiculo" placeholder="Exemplo: 2020" required>
                 </div>
     
                 <div class="form-group">
-                    <label for="vehicleYear">Ano de Fabricação:</label>
-                    <input type="number" id="vehicleYear" name="vehicleYear" placeholder="Exemplo: 2020" min="1900" max="2024" required>
+                    <label for="anoVeiculo">Ano de Fabricação:</label>
+                    <input type="number" id="anoVeiculo" name="anoVeiculo" placeholder="Exemplo: 2020" min="1900" max="2024" required>
                 </div>
     
                 <div class="form-group">
-                    <label for="vehiclePlate">Placa:</label>
-                    <input type="text" id="vehiclePlate" name="vehiclePlate" placeholder="Exemplo: ABC-1234" pattern="[A-Za-z]{3}-\d{4}" required>
+                    <label for="placaVeiculo">Placa:</label>
+                    <input type="text" id="placaVeiculo" name="placaVeiculo" placeholder="Exemplo: ABC-1234" pattern="[A-Za-z]{3}-\d{4}" required>
                     <small>Formato: XXX-1234</small>
                 </div>
-    
-                <div class="form-group">
-                    <label for="vehicleColor">Cor:</label>
-                    <input type="text" id="vehicleColor" name="vehicleColor" placeholder="Exemplo: Preto" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="vehicleFuel">Tipo de Combustível:</label>
-                    <select id="vehicleFuel" name="vehicleFuel" required>
-                        <option value="" disabled selected>Selecione o Combustível</option>
-                        <option value="Gasolina">Gasolina</option>
-                        <option value="Álcool">Álcool</option>
-                        <option value="Diesel">Diesel</option>
-                        <option value="GNV">GNV</option>
-                    </select>
-                </div>
-    
-                <div class="form-group">
-                    <label for="vehicleDescription">Descrição (Opcional):</label>
-                    <textarea id="vehicleDescription" name="vehicleDescription" placeholder="Digite uma descrição do veículo (opcional)"></textarea>
-                </div>
-    
+                
                 <div class="form-buttons">
-                    <button type="button" class="secondary-button" onclick="window.location.href='scheduling.html'">Cancelar</button>
+                    <button type="button" class="secondary-button" onclick="window.location.href='vehicles.html'">Cancelar</button>
                     <button type="submit" class="primary-button">Cadastrar Veículo</button>
                 </div>
             </form>
