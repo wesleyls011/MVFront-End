@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento - Gerenciamento de Manutenção Veicular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/scheduling.css">
 </head>
 <body>
@@ -21,6 +22,7 @@
                 <h3>Novo Agendamento</h3>
                 <button class="add-button" onclick="window.location.href= 'newscheduling.html'">+</button>
             </div>
+
             <div class="scheduling-card">
                 <div class="appointment-info">
                     <span class="date">15 Mar</span>
@@ -29,7 +31,16 @@
                     <p>Veículo: Fiat Uno</p>
                 </div>
                 <div class="status pending">Pendente</div>
+                <div class="action-buttons">
+                    <button class="edit-button" onclick="window.location.href='editappointment.html'">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="delete-button" onclick="deleteAppointment()">
+                        <i class="fas fa-trash"></i> 
+                    </button>
+                </div>
             </div>
+
             <div class="scheduling-card">
                 <div class="appointment-info">
                     <span class="date">16 Mar</span>
@@ -38,7 +49,16 @@
                     <p>Veículo: Honda Fit</p>
                 </div>
                 <div class="status confirmed">Confirmado</div>
+                <div class="action-buttons">
+                    <button class="edit-button" onclick="window.location.href='editappointment.html'">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="delete-button" onclick="deleteAppointment()">
+                        <i class="fas fa-trash"></i> 
+                    </button>
+                </div>
             </div>
+            
             <div class="scheduling-card">
                 <div class="appointment-info">
                     <span class="date">17 Mar</span>
@@ -47,6 +67,14 @@
                     <p>Veículo: VW Gol</p>
                 </div>
                 <div class="status completed">Concluído</div>
+                <div class="action-buttons">
+                    <button class="edit-button" onclick="window.location.href='editappointment.html'">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="delete-button" onclick="deleteAppointment()">
+                        <i class="fas fa-trash"></i> 
+                    </button>
+                </div>
             </div>
         </main>
     </div>
