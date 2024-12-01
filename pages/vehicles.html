@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veículos - Gerenciamento de Manutenção Veicular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/vehicles.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
         </header>
 
         <main class="vehicles-grid">  
-            <div class="vehicle-card new-vehicle">
+            <div class="vehicle-card">
                 <h3>Novo Veículo</h3>
                 <button class="add-button" onclick="window.location.href= 'newvehicles.html'">+</button>
             </div>
@@ -31,6 +32,14 @@
                     <div class="vehicle-status">
                         <span class="status-tag maintenance">Em Manutenção</span>
                     </div>
+                    <div class="action-buttons">
+                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteAppointment()">
+                            <i class="fas fa-trash"></i> 
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="vehicle-card">
@@ -43,6 +52,14 @@
                     <div class="vehicle-status">
                         <span class="status-tag ready">Pronto</span>
                     </div>
+                    <div class="action-buttons">
+                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteAppointment()">
+                            <i class="fas fa-trash"></i> 
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="vehicle-card">
@@ -54,6 +71,14 @@
                     <p>👤 Proprietário: João Silva</p>
                     <div class="vehicle-status">
                         <span class="status-tag scheduled">Agendado</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteAppointment()">
+                            <i class="fas fa-trash"></i> 
+                        </button>
                     </div>
                 </div>
             </div>
