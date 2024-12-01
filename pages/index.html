@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Manutenção Veicular</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -18,24 +19,22 @@
         <div class="right-panel">
             <div class="menu-buttons"> 
                 <button class="menu-button" data-section="scheduling" onclick="handleNavigation('scheduling')">
-                    <span class="icon">📅</span> 
+                    <span class="icon"><i class="fas fa-calendar-alt"></i></span> 
                     Agendamento
-                </button>  <!-- ate que enfim funcionou!!! -->
+                </button>
                 <button class="menu-button" data-section="vehicles" onclick="handleNavigation('vehicles')">
-                    <span class="icon">🚗</span>
+                    <span class="icon"><i class="fas fa-car"></i></span>
                     Veículos
                 </button>
                 <button class="menu-button" data-section="clients" onclick="handleNavigation('clients')">
-                    <span class="icon">👤</span>
+                    <span class="icon"><i class="fas fa-user"></i></span>
                     Cliente
                 </button>
                 <button class="menu-button" data-section="services" onclick="handleNavigation('services')">
-                    <span class="icon">🔧</span>
+                    <span class="icon"><i class="fas fa-wrench"></i></span>
                     Serviços
                 </button>
-            </div>
-        </div> <!-- sem o handlenavigation ele nao funciona a logica do js-->
-    </div>
+            </div>            
     <script src="../scripts/main.js"></script>
 </body>
 </html>
