@@ -26,4 +26,42 @@ function handleNavigation(section) {
             console.log('Seção não encontrada');
             break;
     }
+
+    // Função para listar clientes
+async function listarClientes() {
+    try {
+        const response = await fetch('http://localhost:8080/clientes');
+        
+        if (!response.ok) {
+            throw new Error('Erro ao buscar clientes');
+        }
+
+        const clientes = await response.json();
+
+        // Seleciona o elemento onde a lista será exibida
+        const listaClientes = document.getElementById('clientes-lista');
+        listaClientes.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
+
+        // Exibe os clientes na página
+        if (clientes.length > 0) {
+            clientes.forEach(cliente => {
+                const divCliente = document.createElement('div');
+                divCliente.classList.add('cliente');
+                divCliente.innerHTML = `
+                    <p><strong>Nome:</strong> ${cliente.nome}</p>
+                    <p><strong>Email:</strong> ${cliente.email}</p>
+                    <p><strong>Telefone:</strong> ${cliente.telefone}</p>
+                    <p><strong>CPF:</strong> ${cliente.cpf}</p>
+                `;
+                listaClientes.appendChild(divCliente);
+            });
+        } else {
+            listaClientes.innerHTML = '<p>Nenhum cliente encontrado.</p>';
+        }
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Ocorreu um erro ao buscar os clientes.');
+    }
+}
+
 }

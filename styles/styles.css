@@ -68,13 +68,13 @@ h1 {
 }
 
 .menu-button {
-    background: white;
+    background: linear-gradient(50deg, #5d95f0, #4364F7, #6FB1FC);
     border: none;
     padding: 2rem;
     border-radius: 16px;
     font-size: 1.4rem;
     font-weight: 500;
-    color: #2d3748;
+    color: white;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
