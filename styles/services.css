@@ -188,7 +188,7 @@ body {
 .add-button:hover {
     transform: scale(1.1);
 }
-
+/*
 .modal {
     display: none;
     position: fixed;
@@ -249,7 +249,7 @@ body {
     background: linear-gradient(135deg, #0052D4, #4364F7);
     color: white;
 }
-
+*/ 
 @media (max-width: 768px) {
     .services-container {
         padding: 0.5rem;
