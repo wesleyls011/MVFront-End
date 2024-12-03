@@ -34,6 +34,10 @@ body {
     gap: 1rem;
 }
 
+.logo-section img {
+    height: 8vh;
+}
+
 .small-icon {
     width: 32px;
     height: 32px;
