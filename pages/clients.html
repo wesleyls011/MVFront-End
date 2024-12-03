@@ -17,72 +17,14 @@
             <button class="back-button" onclick="window.location.href='../pages/index.html'">Voltar</button>
         </header>
 
-        <main class="clients-grid">
+        <main class="clients-grid" id="clientsGrid">
+            <!-- os cards vao aparecer aqui -->
             <div class="client-card">
                 <h3>Novo Cliente</h3>
                 <button class="add-button" onclick="window.location.href='newclient.html'">+</button>
             </div>
-            <div class="client-card">
-                <div class="client-info">
-                    <div class="client-avatar">JS</div>
-                    <h4>João Silva</h4>
-                    <p>📱 (11) 98765-4321</p>
-                    <p>📧 joao.silva@email.com</p>
-                    <div class="clientes-veiculos">
-                        <span class="veiculo-tag">Fiat Uno</span>
-                        <span class="veiculo-tag">Honda CB 300</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateclients.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="client-card">
-                <div class="client-info">
-                    <div class="client-avatar">MS</div>
-                    <h4>Maria Santos</h4>
-                    <p>📱 (11) 91234-5678</p>
-                    <p>📧 maria.santos@email.com</p>
-                    <div class="clientes-veiculos">
-                        <span class="veiculo-tag">Honda Fit</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateclients.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="client-card">
-                <div class="client-info">
-                    <div class="client-avatar">PO</div>
-                    <h4>Pedro Oliveira</h4>
-                    <p>📱 (11) 99876-5432</p>
-                    <p>📧 pedro.oliveira@email.com</p>
-                    <div class="clientes-veiculos">
-                        <span class="veiculo-tag">VW Gol</span>
-                        <span class="veiculo-tag">Yamaha Factor</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateclients.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
         </main>
     </div>
-    <script src="../scripts/clients.js"></script>
+    <script src="../scripts/cardclient.js"></script>
 </body>
 </html>
