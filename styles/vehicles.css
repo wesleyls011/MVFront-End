@@ -35,7 +35,8 @@ body {
 }
 
 .logo-section img {
-    height: 8vh;
+    width: 40px;
+    margin-right: 8px;
 }
 
 .small-icon {
