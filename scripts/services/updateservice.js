@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             };
 
             try {
-                const response = await fetch(`http://localhost:8080/servicos`, {
+                const response = await fetch(`http://localhost:8080/servicos/${serviceId}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
