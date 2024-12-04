@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.log('Serviço carregado:', service);
             
             // Preenche os campos com os dados retornados
-            document.getElementById('descricao').value = service.descricao || '';
-           document.getElementById('preco').value = service.preco || '';
+            document.getElementById('descricaoServico').value = service.descricao || '';
+           document.getElementById('precoServico').value = service.preco || '';
         } else {
             // Se não obtiver sucesso, exibe o erro
             alert('Erro ao carregar os dados do serviço.');
