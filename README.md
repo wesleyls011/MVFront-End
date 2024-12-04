@@ -1,23 +1,24 @@
-# Sistema de Manutenção Veicular 
+# 🚗 Sistema de Manutenção Veicular
 
-Este é um sistema web desenvolvido para gerenciar agendamentos, cadastros de clientes, veículos e serviços em uma oficina de manutenção veicular. A aplicação possui uma interface amigável e moderna para facilitar o gerenciamento do fluxo de trabalho.
+O **Sistema de Manutenção Veicular** é uma plataforma web projetada para otimizar o gerenciamento de agendamentos, cadastros de clientes, veículos e serviços em oficinas de manutenção veicular. Com uma interface moderna e intuitiva, a aplicação visa melhorar a eficiência no controle das operações diárias da oficina.
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
-- **Cadastro de Clientes**: Adicione informações básicas sobre os clientes.
-- **Cadastro de Veículos**: Registre os veículos dos clientes com detalhes como modelo, placa e ano.
-- **Cadastro de Serviços**: Gerencie serviços oferecidos, incluindo nome, descrição e preço.
-- **Agendamento de Serviços**: Agende serviços para veículos específicos com datas e horários definidos.
-- **Interface Responsiva**: Totalmente responsivo para uso em desktops, tablets e celulares.
+- **👥 Gerenciamento de Clientes**: Registre as informações essenciais dos clientes de forma simples e rápida.
+- **🚙 Gerenciamento de Veículos**: Adicione veículos dos clientes, incluindo dados como modelo, placa e ano de fabricação.
+- **🔧 Gerenciamento de Serviços**: Gerencie e descreva os serviços oferecidos pela oficina, com informações como nome, descrição e preço.
+- **📅 Agendamento de Serviços**: Agende manutenções para veículos, especificando datas e horários convenientes.
+- **📱 Interface Responsiva**: Design totalmente responsivo, adaptável para uso em desktops, tablets e dispositivos móveis.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **Frontend**: 
-  - HTML5
-  - CSS3
-  - JavaScript
+### **Frontend**:
+- **HTML5** 🌐
+- **CSS3** 🎨
+- **JavaScript** 💻
 
-- **Backend (Planejado)**:
-  - Java (Spring Framework)
-  - MySQL
+### **Backend (Planejado)**:
+- **Java** ☕ com **Spring Framework** 🚀
+- **MySQL** 🗄️
 
+Este sistema proporciona uma solução completa para a administração de uma oficina, com fácil navegação e integração eficiente entre os diversos módulos.
