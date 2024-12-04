@@ -5,7 +5,7 @@ function deleteClient(clientId) {
         return;
     }
 
-    fetch(`http://localhost:8080/cliente/${clientId}`, {
+    fetch(`http://localhost:8080/clientes/${clientId}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
