@@ -50,19 +50,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             };
 
             try {
+
                 const response = await fetch(`http://localhost:8080/servicos/${serviceId}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(updatedService),
+                    body: JSON.stringify(updatedService), // Envia os dados do serviço no corpo
                 });
-
+            
                 console.log('Resposta da API:', response);
-
+            
                 if (response.ok) {
                     alert('Serviço atualizado com sucesso!');
-                    window.location.href = 'services.html'; 
+                    window.location.href = 'services.html';
                 } else {
                     const error = await response.json();
                     alert('Erro ao atualizar serviço: ' + error.message);

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p>🔑 ID Cliente: ${vehicle.idCliente || 'Não Informado'}</p>
                         <div class="action-buttons">
                             <!-- Botões de ação: Editar e Excluir -->
-                            <button class="edit-button" onclick="window.location.href='updatevehicle.html?id=${vehicle.id}'">
+                            <button class="edit-button" onclick="window.location.href='updatevehicles.html?id=${vehicle.id}'">
                                 <i class="fas fa-edit"></i>
                             </button>
                             <button class="delete-button" onclick="deleteVehicle(${vehicle.id})">
