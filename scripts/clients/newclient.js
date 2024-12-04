@@ -5,17 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
 
         const nome = document.getElementById('nome').value;
+        const cpf = document.getElementById('cpf').value;
         const email = document.getElementById('email').value;
         const telefone = document.getElementById('telefone').value;
 
         const clientData = {
             nome: nome,
+            cpf: cpf,
             email: email,
             telefone: telefone
         };
 
         try {
-            const response = await fetch('http://localhost:8080/cliente', {
+            const response = await fetch('http://localhost:8080/clientes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
