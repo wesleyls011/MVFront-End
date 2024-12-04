@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const schedulingGrid = document.getElementById('schedulingGrid');
+    const schedulingGrid = document.querySelector('.scheduling-grid');  // Corrigido para querySelector
 
-    console.log(schedulingGrid);
     async function loadScheduling() {
         try {
             const response = await fetch('http://localhost:8080/agendamentos');
             if (response.ok) {
                 const data = await response.json();
                 const scheduling = data.content;
-                console.log(scheduling);
                 if (Array.isArray(scheduling)) {
                     displayScheduling(scheduling);
                 } else {
@@ -19,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             alert('Erro na comunicação com o servidor: ' + error.message);
+            console.error('Erro ao carregar agendamentos:', error);  // Log de erro adicional
         }
     }
 
