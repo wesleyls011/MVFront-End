@@ -18,32 +18,19 @@
 
         <main class="scheduling-form-container">
            <form action="#" method="POST" id="schedulingForm">
+            
             <div class="form-group">
-                <label for="clientCPF">CPF do Cliente:</label>
-                <input type="text" id="clientCPF" name="clientCPF" placeholder="Exemplo: 12345678910" required>
+                <label for="data">Data do Agendamento:</label>
+                <input type="date" id="data" name="data">
             </div>
 
-            <div class="form-group">
-                <label for="veiculoPlaca">Placa do Veículo:</label>
-                <input type="text" id="veiculoPlaca" name="veiculoPlaca" placeholder="Exemplo: ABC-1234" pattern="[A-Za-z]{3}-\d{4}" required>
-            </div>
-
-            <div class="form-group">
-                <label for="dataAgendamento">Data do Agendamento:</label>
-                <input type="date" id="dataAgendamento" name="dataAgendamento">
-            </div>
-
-            <div class="form-group">
-                <label for="idServico">ID do Serviço:</label>
-                <input type="number" id="idServico" name="idServico">
-            </div>
             <div class="form-buttons">
                 <button type="button" class="secondary-button" onclick="window.location.href='scheduling.html'">Cancelar</button>
-                <button type="submit" class="primary-button">Editar</button>
+                <button type="submit" class="primary-button">Salvar</button>
             </div>
            </form>
         </main>
     </div>
-    <script src="../scripts/newscheduling.js"></script>
+    <script src="../scripts/scheduling/updatescheduling.js"></script>
 </body>
 </html>

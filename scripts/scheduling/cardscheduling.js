@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const schedulingGrid = document.querySelector('.scheduling-grid');  // Corrigido para querySelector
+    const schedulingGrid = document.querySelector('.scheduling-grid'); 
 
     async function loadScheduling() {
         try {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             alert('Erro na comunicação com o servidor: ' + error.message);
-            console.error('Erro ao carregar agendamentos:', error);  // Log de erro adicional
+            console.error('Erro ao carregar agendamentos:', error);  
         }
     }
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          <p>🔧 Servico: ${appointment.idServico || 'Não Informado'}</p>
                         <div class="action-buttons">
                             <!-- Botões de ação: Editar e Excluir -->
-                            <button class="edit-button" onclick="window.location.href='updateschedule.html?id=${appointment.id}'">
+                            <button class="edit-button" onclick="window.location.href='updatescheduling.html?id=${appointment.id}'">
                                 <i class="fas fa-edit"></i>
                             </button>
                             <button class="delete-button" onclick="deleteScheduling(${appointment.id})">
