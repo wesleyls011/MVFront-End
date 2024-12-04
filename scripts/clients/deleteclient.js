@@ -14,6 +14,7 @@ function deleteClient(clientId) {
     .then(response => {
         if (response.ok) {
             alert('Cliente deletado com sucesso!');
+            location.reload();
 
             const clientCard = document.getElementById(`client-${clientId}`);
             if (clientCard) {
