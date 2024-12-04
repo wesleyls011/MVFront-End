@@ -17,73 +17,14 @@
             <button class="back-button" onclick="window.location.href='../pages/index.html'">Voltar</button>
         </header>
 
-        <main class="services-grid">
+        <main class="services-grid" id="servicesGrid">
             <div class="service-card">
                 <h3>Novo Serviço</h3>             <!-- ver se vai usar esse ou html msm-->
                 <button class="add-button" onclick="window.location.href='newservice.html'">+</button>
             </div>
-            <div class="service-card">
-                <div class="service-info">
-                    <div class="service-icon">🔧</div>
-                    <h4>Troca de Óleo</h4>
-                    <p>⏱️ Duração: 1 hora</p>
-                    <p>💰 Valor: R$ 150,00</p>
-                    <div class="service-tags">
-                        <span class="tag">Manutenção Preventiva</span>
-                        <span class="tag">Motor</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateservice.html'".html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-info">
-                    <div class="service-icon">⚙️</div>
-                    <h4>Revisão Geral</h4>
-                    <p>⏱️ Duração: 3 horas</p>
-                    <p>💰 Valor: R$ 350,00</p>
-                    <div class="service-tags">
-                        <span class="tag">Revisão</span>
-                        <span class="tag">Diagnóstico</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateservice.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-info">
-                    <div class="service-icon">🔩</div>
-                    <h4>Alinhamento</h4>
-                    <p>⏱️ Duração: 2 horas</p>
-                    <p>💰 Valor: R$ 120,00</p>
-                    <div class="service-tags">
-                        <span class="tag">Suspensão</span>
-                        <span class="tag">Rodas</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updateservice.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
         </main>
     </div>
-    <script src="../scripts/services.js"></script>
+    <script src="../scripts/services/cardservices.js"></script>
+    <script src="../scripts/services/deleteservice.js"></script>
 </body>
 </html>

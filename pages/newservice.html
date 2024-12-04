@@ -17,29 +17,18 @@
             <button class="back-button" onclick="window.location.href='services.html'">Voltar</button>
         </header>
         <main class="scheduling-form-container">
-            <form action="#" method="POST" id="vehicleForm">
+            <form action="#" method="POST" id="serviceForm">
                 <div class="form-group">
                     <label for="descricaoServico">Descrição:</label>
                     <input type="text" id="descricaoServico" name="descricaoServico">
                 </div>
-                
-                <div class="form-group">
-                    <label for="servicoId">Id do Serviço:</label>
-                    <input type="number" id="servicoId" name="servicoId">
-                </div>
-
-                <div class="form-group">
-                    <label for="serviceStatus">Estado do Serviço:</label>
-                    <select id="serviceStatus" name="serviceStatus" required>
-                        <option value="em-andamento" selected>Em Andamento</option>
-                        <option value="finalizado">Finalizado</option>
-                    </select>
-                </div>
 
                 <div class="form-group">
                     <label for="precoServico">Preço do Serviço:</label>
-                    <input type="number" id="precoServico" name="precoServico">
+                    <input type="number" id="precoServico" name="precoServico" step="0.01" min="0" required>
                 </div>
+                
+                
 
                 <div class="form-buttons">
                     <button type="button" class="secondary-button" onclick="window.location.href='services.html'">Cancelar</button>
@@ -47,7 +36,9 @@
                 </div>
             </form>
         </div>    
-        </main>      
-
+        </main>     
+        
+        <script src="/scripts/services/newservice.js"></script>
+        
 </body>
 </html>
