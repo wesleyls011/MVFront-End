@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const serviceId = urlParams.get('id');
 
-    console.log('Service ID:', serviceId); // Verifique se o serviceId está correto
+    console.log('Service ID:', serviceId); 
 
     if (!serviceId) {
         alert('ID do serviço não encontrado.');
@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-        // Fazendo a consulta ao serviço específico com base no serviceId
         const response = await fetch(`http://localhost:8080/servicos/${serviceId}`);
         
         if (response.ok) {
@@ -18,15 +17,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             console.log('Serviço carregado:', service);
             
-            // Preenche os campos com os dados retornados
             document.getElementById('descricaoServico').value = service.descricao || '';
            document.getElementById('precoServico').value = service.preco || '';
         } else {
-            // Se não obtiver sucesso, exibe o erro
+
             alert('Erro ao carregar os dados do serviço.');
         }
     } catch (error) {
-        // Em caso de erro na requisição
+
         alert('Erro na comunicação com o servidor: ' + error.message);
     }
 
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(updatedService), // Envia os dados do serviço no corpo
+                    body: JSON.stringify(updatedService), 
                 });
             
                 console.log('Resposta da API:', response);

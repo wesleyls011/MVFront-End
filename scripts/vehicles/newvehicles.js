@@ -4,13 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        // Obtendo os valores dos campos do formulário
         const marca = document.getElementById('marca')?.value || '';
         const modelo = document.getElementById('modelo')?.value || '';
         const ano = document.getElementById('ano')?.value || '';
         const idCliente = document.getElementById('idCliente')?.value || '';
-
-        // Validação simples antes do envio
 
         const vehicleData = {
             marca: marca,
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 alert('Veículo cadastrado com sucesso!');
-                window.location.href = 'vehicles.html'; // Redirecionar após sucesso
+                window.location.href = 'vehicles.html'; 
             } else {
                 const error = await response.json();
                 alert('Erro ao cadastrar veículo: ' + (error.message || 'Erro desconhecido.'));
