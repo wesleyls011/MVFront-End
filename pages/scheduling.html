@@ -19,66 +19,12 @@
 
         <main class="scheduling-grid">
             <div class="scheduling-card">
+                <!-- os cards vao aparecer aqui-->
                 <h3>Novo Agendamento</h3>
                 <button class="add-button" onclick="window.location.href= 'newscheduling.html'">+</button>
             </div>
-
-            <div class="scheduling-card">
-                <div class="appointment-info">
-                  <span class="date">15 Mar</span>
-                  <h4>Troca de Óleo</h4>
-                  <p>Cliente: João Silva</p>
-                  <p>Veículo: Fiat Uno</p>
-                </div>
-                <div class="status pending">Pendente</div>
-
-                <div class="action-buttons">
-                    <button class="edit-button" onclick="window.location.href= 'updatescheduling.html'">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="delete-button" onclick="deleteAppointment()">
-                        <i class="fas fa-trash"></i> 
-                    </button>
-                </div>
-            </div>
-
-            <div class="scheduling-card">
-                <div class="appointment-info">
-                    <span class="date">16 Mar</span>
-                    <h4>Revisão Geral</h4>
-                    <p>Cliente: Maria Santos</p>
-                    <p>Veículo: Honda Fit</p>
-                </div>
-                <div class="status confirmed">Confirmado</div>
-                <div class="action-buttons">
-                    <button class="edit-button" onclick="window.location.href='updatescheduling.html'">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="delete-button" onclick="deleteAppointment()">
-                        <i class="fas fa-trash"></i> 
-                    </button>
-                </div>
-            </div>
-            
-            <div class="scheduling-card">
-                <div class="appointment-info">
-                    <span class="date">17 Mar</span>
-                    <h4>Alinhamento</h4>
-                    <p>Cliente: Pedro Oliveira</p>
-                    <p>Veículo: VW Gol</p>
-                </div>
-                <div class="status completed">Concluído</div>
-                <div class="action-buttons">
-                    <button class="edit-button" onclick="window.location.href= 'updatescheduling.html'">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="delete-button" onclick="deleteAppointment()">
-                        <i class="fas fa-trash"></i> 
-                    </button>
-                </div>
-            </div>
         </main>
     </div>
-    <script src="../scripts/scheduling.js"></script>
+    <script src="../scripts/scheduling/cardscheduling.js"></script>
 </body>
 </html>
