@@ -27,7 +27,6 @@ function handleNavigation(section) {
             break;
     }
 
-    // Função para listar clientes
 async function listarClientes() {
     try {
         const response = await fetch('http://localhost:8080/clientes');
@@ -38,11 +37,9 @@ async function listarClientes() {
 
         const clientes = await response.json();
 
-        // Seleciona o elemento onde a lista será exibida
         const listaClientes = document.getElementById('clientes-lista');
-        listaClientes.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
+        listaClientes.innerHTML = ''; 
 
-        // Exibe os clientes na página
         if (clientes.length > 0) {
             clientes.forEach(cliente => {
                 const divCliente = document.createElement('div');
