@@ -50,8 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             };
 
             try {
-                const serviceId = updatedService.id; // Certifique-se de que o `updatedService` contém o campo `id`.
-            
+
                 const response = await fetch(`http://localhost:8080/servicos/${serviceId}`, {
                     method: 'PUT',
                     headers: {
