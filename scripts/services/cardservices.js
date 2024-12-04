@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>${service.descricao}</h4>
                 <p>Preço: R$${service.preco || 'Preço não informado'}</p>
                 <div class="action-buttons">
-                    <button class="edit-button" onclick="window.location.href='updateservices.html?id=${service.id}'">
+                    <button class="edit-button" onclick="window.location.href='updateservice.html?id=${service.id}'">
                         <i class="fas fa-edit"></i>
                     </button>
                     <button class="delete-button" onclick="deleteService(${service.id})">
