@@ -17,32 +17,28 @@
         </header>
     
         <main class="client-form-container">
-            <form action="#" method="POST" id="schedulingForm">
+            <form id="schedulingForm">
                 <div class="form-group">
-                    <label for="clientName">Nome do Cliente:</label>
-                    <input type="text" id="clientName" name="clientName" placeholder="Exemplo: João Silva" required>
+                    <label for="nome">Nome do Cliente:</label>
+                    <input type="text" id="nome" name="nome">
                 </div>
     
                 <div class="form-group">
-                    <label for="clientCPF">CPF:</label>
-                    <input type="text" id="clientCPF" name="clientCPF" placeholder="Exemplo: 12345678910" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
                 </div>
     
                 <div class="form-group">
-                    <label for="clientEmail">Email:</label>
-                    <input type="text" id="clientEmail" name="clientEmail" placeholder="Exemplo: joao@email.com" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="clientTelefone">Telefone:</label>
-                    <input type="text" id="clientTelefone" name="clientTelefone" placeholder="Exemplo: (12) 345678910" required>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
                 </div>
     
                 <div class="form-buttons">
                     <button type="button" class="secondary-button" onclick="window.location.href='clients.html'">Cancelar</button>
-                    <button type="submit" class="primary-button">Editar</button>
+                    <button type="submit" class="primary-button">Salvar Alterações</button>
+
                 </div>
-               </form>
+            </form>
         </main>
     </div>
     <script src="../scripts/clients/updateclient.js"></script>
