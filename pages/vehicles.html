@@ -18,72 +18,14 @@
         </header>
 
         <main class="vehicles-grid">  
+            <!-- os cards vao aparecer aqui -->
             <div class="vehicle-card">
                 <h3>Novo Veículo</h3>
                 <button class="add-button" onclick="window.location.href= 'newvehicles.html'">+</button>
             </div>
-            <div class="vehicle-card">  <!-- FALTA ARRUMAR ESSES CARDS, deve ter um botao pra poder alterar e um de excluir--> <!-- feito :)-->
-                <div class="vehicle-info">
-                    <div class="vehicle-icon">🚗</div>
-                    <h4>Fiat Uno</h4>
-                    <p>📝 Placa: ABC-1234</p>
-                    <p>📅 Ano: 2019</p>
-                    <p>👤 Proprietário: João Silva</p>
-                    <div class="vehicle-status">
-                        <span class="status-tag maintenance">Em Manutenção</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="vehicle-card">
-                <div class="vehicle-info">
-                    <div class="vehicle-icon">🚙</div>
-                    <h4>Honda Fit</h4>
-                    <p>📝 Placa: DEF-5678</p>
-                    <p>📅 Ano: 2020</p>
-                    <p>👤 Proprietário: Maria Santos</p>
-                    <div class="vehicle-status">
-                        <span class="status-tag ready">Pronto</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="vehicle-card">
-                <div class="vehicle-info">
-                    <div class="vehicle-icon">🏍️</div>
-                    <h4>Honda CB 300</h4>
-                    <p>📝 Placa: GHI-9012</p>
-                    <p>📅 Ano: 2021</p>
-                    <p>👤 Proprietário: João Silva</p>
-                    <div class="vehicle-status">
-                        <span class="status-tag scheduled">Agendado</span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="edit-button" onclick="window.location.href='updatevehicles.html'">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="delete-button" onclick="deleteAppointment()">
-                            <i class="fas fa-trash"></i> 
-                        </button>
-                    </div>
-                </div>
-            </div>
         </main>
     </div>
-    <script src="../scripts/vehicles.js"></script>
+    <script src="../scripts//vehicles/deletevehicles.js"></script>
+    <script src="../scripts/vehicles/cardvehicles.js"></script>
 </body>
 </html>
