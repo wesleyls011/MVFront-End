@@ -19,26 +19,25 @@
         <main class="scheduling-form-container">
             <form action="#" method="POST" id="vehicleForm">
                 <div class="form-group">
-                    <label for="marcaVeiculo">Marca do Veículo:</label>
-                    <input type="text" id="marcaVeiculo" name="marcaVeiculo" placeholder="Exemplo: Toyota Corolla" required>
+                    <label for="marca">Marca do Veículo:</label>
+                    <input type="text" id="marca" name="marca" placeholder="Exemplo: Toyota Corolla" required>
                 </div>
     
                 <div class="form-group">
-                    <label for="modeloVeiculo">Modelo:</label>
-                    <input type="text" id="modeloVeiculo" name="modeloVeiculo" placeholder="Exemplo: 2020" required>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Exemplo: 2020" required>
                 </div>
     
                 <div class="form-group">
-                    <label for="anoVeiculo">Ano de Fabricação:</label>
-                    <input type="number" id="anoVeiculo" name="anoVeiculo" placeholder="Exemplo: 2020" min="1900" max="2024" required>
+                    <label for="ano">Ano de Fabricação:</label>
+                    <input type="number" id="ano" name="ano" placeholder="Exemplo: 2020" min="1900" max="2024" required>
                 </div>
-    
+
                 <div class="form-group">
-                    <label for="placaVeiculo">Placa:</label>
-                    <input type="text" id="placaVeiculo" name="placaVeiculo" placeholder="Exemplo: ABC-1234" pattern="[A-Za-z]{3}-\d{4}" required>
-                    <small>Formato: XXX-1234</small>
+                    <label for="idCliente">ID do Cliente:</label>
+                    <input type="number" id="idCliente" name="idCliente" placeholder="Exemplo: 1" required>
                 </div>
-                
+                    
                 <div class="form-buttons">
                     <button type="button" class="secondary-button" onclick="window.location.href='vehicles.html'">Cancelar</button>
                     <button type="submit" class="primary-button">Cadastrar Veículo</button>
@@ -47,6 +46,6 @@
         </div>    
         </main>
     </div>
-    <script src="../scripts/newscheduling.js"></script>
+    <script src="../scripts/vehicles/newvehicles.js"></script>
 </body>
 </html>
