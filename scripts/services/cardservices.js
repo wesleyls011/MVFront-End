@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <i class="fas fa-cogs"></i> <!-- Engrenagem -->
                 </div> <!-- Primeira letra da descricao -->
                 <h4>${service.descricao}</h4>
+                <h4>ID: ${service.id} </h4>
                 <p>Preço: R$${service.preco || 'Preço não informado'}</p>
                 <div class="action-buttons">
                     <button class="edit-button" onclick="window.location.href='updateservice.html?id=${service.id}'">

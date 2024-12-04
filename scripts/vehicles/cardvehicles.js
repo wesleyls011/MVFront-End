@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="vehicle-details">
                         <h4>${vehicle.marca} ${vehicle.modelo}</h4>
                         <p>📅 Ano: ${vehicle.ano || 'Não Informado'}</p>
-                        <p>🔑 ID Cliente: ${vehicle.idCliente || 'Não Informado'}</p>
+                        <p>🔑 Cliente: ${vehicle.nomeCliente || 'Não Informado'}</p>
                         <div class="action-buttons">
                             <!-- Botões de ação: Editar e Excluir -->
                             <button class="edit-button" onclick="window.location.href='updatevehicles.html?id=${vehicle.id}'">

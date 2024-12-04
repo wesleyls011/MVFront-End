@@ -38,11 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="client-info">
                     <div class="client-avatar">${clientAvatar}</div> <!-- Primeira letra do nome -->
                     <h4>${client.nome}</h4>
+                    <h4> Cliente ID: ${client.id} </h4>
                     <p>📱 ${client.telefone || 'Telefone não informado'}</p>
                     <p>📧 ${client.email || 'E-mail não informado'}</p>
-                    <div class="clientes-veiculos">
-                        ${client.veiculos ? client.veiculos.map(veiculo => `<span class="veiculo-tag">${veiculo}</span>`).join('') : 'Veículos não informados'}
-                    </div>
                     <div class="action-buttons">
                         <button class="edit-button" onclick="window.location.href='updateclients.html?id=${client.id}'">
                             <i class="fas fa-edit"></i>

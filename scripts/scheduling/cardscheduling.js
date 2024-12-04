@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function displayScheduling(scheduling) {
         const schedulingContainer = document.querySelector('.scheduling-grid');
         scheduling.forEach(appointment => {
+            console.log(appointment)
             const schedulingCard = document.createElement('div');
             schedulingCard.classList.add('scheduling-card');
             
@@ -32,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="scheduling-avatar">📅</div>
                     <div class="scheduling-details">
                         <h4>Agendamento: ${appointment.id}</h4>
-                        <p>🚗 Veículo: ${appointment.idVeiculo || 'Não Informado'}</p>
+                        <p>🚗 Veículo: ${appointment.modeloVeiculo || 'Não Informado'}</p>
                         <p>📅 Data: ${appointment.data || 'Não Informada'}</p>
-                        <p>👤 Cliente: ${appointment.idCliente || 'Não Informado'}</p>
-                         <p>🔧 Servico: ${appointment.idServico || 'Não Informado'}</p>
+                        <p>👤 Cliente: ${appointment.nomeCliente || 'Não Informado'}</p>
+                         <p>🔧 Servico ID: ${appointment.idServico || 'Não Informado'}</p>
                         <div class="action-buttons">
                             <!-- Botões de ação: Editar e Excluir -->
                             <button class="edit-button" onclick="window.location.href='updateschedule.html?id=${appointment.id}'">
