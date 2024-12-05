@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     <div class="vehicle-details">
                         <h4>${vehicle.marca} ${vehicle.modelo}</h4>
+                        <h4>Veiculo ID: ${vehicle.id} </h4>
                         <p>📅 Ano: ${vehicle.ano || 'Não Informado'}</p>
                         <p>🔑 Cliente: ${vehicle.nomeCliente || 'Não Informado'}</p>
                         <div class="action-buttons">
