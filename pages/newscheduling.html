@@ -18,19 +18,30 @@
 
         <main class="scheduling-form-container">
            <form action="#" method="POST" id="schedulingForm">
+            
             <div class="form-group">
-                <label for="idCliente">ID do Cliente:</label>
-                <input type="number" id="idCliente" name="idCliente" placeholder="Exemplo: 1" required>
+                <label for="idCliente">Selecione o Cliente:</label>
+                <select id="idCliente" name="idCliente" required>
+                    <option value="" disabled selected>Escolha um cliente</option>
+                    
+                </select>
             </div>
+            
+            <div class="form-group">
+                <label for="idVeiculo">Selecione o Veículo:</label>
+                <select id="idVeiculo" name="idVeiculo" required>
+                    <option value="" disabled selected>Escolha um veículo</option>
+                    
+                </select>
+            </div>
+            
 
             <div class="form-group">
-                <label for="idVeiculo">ID do Veículo:</label>
-                <input type="number" id="idVeiculo" name="idVeiculo" placeholder="Exemplo: 10" required>
-            </div>
-
-            <div class="form-group">
-                <label for="idServico">ID do Serviço:</label>
-                <input type="number" id="idServico" name="idServico" required>
+                <label for="idServico">Selecione o Serviço:</label>
+                <select id="idServico" name="idServico" required>
+                    <option value="" disabled selected>Escolha um serviço</option>
+                    
+                </select>
             </div>
 
             <div class="form-group">
