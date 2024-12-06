@@ -11,16 +11,16 @@ function handleNavigation(section) {
     
     switch (section) { // se nao tiver window.location ele tambem nao vai funcionar
         case 'scheduling':
-            window.location.href = '../pages/scheduling.html';
+            window.location.href = '../pages/scheduling/scheduling.html';
             break;
         case 'vehicles':
-            window.location.href = '../pages/vehicles.html';
+            window.location.href = '../pages/vehicles/vehicles.html';
             break;
         case 'clients':
-            window.location.href = '../pages/clients.html';
+            window.location.href = '../pages/clients/clients.html';
             break;
         case 'services':
-            window.location.href = '../pages/services.html';
+            window.location.href = '../pages/services/services.html';
             break;
         default:
             console.log('Seção não encontrada');
