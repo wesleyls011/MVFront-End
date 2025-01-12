@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const data = await response.json();
             console.log(data);
     
-    
             if (!data.content || !Array.isArray(data.content)) {
                 throw new Error(`Formato inesperado ao carregar ${placeholderText}`);
             }
